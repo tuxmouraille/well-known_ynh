@@ -1,8 +1,8 @@
 {
-  "name": "BoxFAI",
-  "id": "well-known",
+  "name": "well-known",
+  "id": "wellknown",
   "description": {
-    "fr": "Installation du xml pour l'autoconfiguration' des clients courriels. Ce paquet n'installe aucune application'"
+    "fr": "Installation du xml pour l'configuration des clients courriels. Ce paquet n'installe aucune application"
   },
   "developer": {
     "name": "txmrl",
@@ -18,7 +18,7 @@
           "fr": "Choisir un domain pour la box."
         },
         "example": "domain.org"
-      },
+      }
     ]
   }
 }
