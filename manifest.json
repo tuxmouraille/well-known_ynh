@@ -18,6 +18,11 @@
           "fr": "Choisir un domain où installer la configuration."
         },
         "example": "domain.org"
+      },
+      {
+        "name": "path",
+        "type": "path",
+        "default": "/.well-known"
       }
     ]
   }

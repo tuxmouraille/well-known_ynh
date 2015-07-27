@@ -2,12 +2,15 @@
 
 # Retrieve arguments
 domain=$1
-path=/.well-known
+path=$2
 
 sudo yunohost app checkurl $domain$path -a well-known
 if [[ ! $? -eq 0 ]]; then
   exit 1
 fi
+
+# Remove trailing "/" for next commands
+path=${path%/}
 
 # Add config xml
 sed -i "s@DOMAINTOCHANGE@$domain@g" ../conf/config-v1.1.xml
