@@ -2,7 +2,7 @@
   "name": "well-known",
   "id": "wellknown",
   "description": {
-    "fr": "Installation du xml pour l'configuration des clients courriels. Ce paquet n'installe aucune application"
+    "fr": "Installation du xml pour la configuration des clients courriels. Ce paquet n'installe aucune application"
   },
   "developer": {
     "name": "txmrl",
@@ -15,7 +15,7 @@
       {
         "name": "domain",
         "ask": {
-          "fr": "Choisir un domain pour la box."
+          "fr": "Choisir un domain où installer la configuration."
         },
         "example": "domain.org"
       }
