@@ -14,11 +14,11 @@ path=${path%/}
 
 # Add config xml
 sed -i "s@DOMAINTOCHANGE@$domain@g" ../conf/config-v1.1.xml
-sudo mkdir -p /var/www/$path/autoconfig/mail/
-sudo cp ../conf/config-v1.1.xml /var/www/$path/autoconfig/mail/config-v1.1.xml
+sudo mkdir -p /var/www$path/autoconfig/mail/
+sudo cp ../conf/config-v1.1.xml /var/www$path/autoconfig/mail/config-v1.1.xml
 
 #skip config path /$path/autoconfig/mail/config-v1.1.xml
-sudo yunohost app setting well-known skipped_uris -v /$path/autoconfig/mail/config-v1.1.xml
+sudo yunohost app setting well-known skipped_uris -v $path/autoconfig/mail/config-v1.1.xml
 
 # Configure Nginx
 sudo cp ../conf/nginx.conf /etc/nginx/conf.d/$domain.d/well-known.conf
