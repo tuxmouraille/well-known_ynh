@@ -1,6 +1,6 @@
 {
   "name": "well-known",
-  "id": "wellknown",
+  "id": "well-known",
   "description": {
     "fr": "Installation du xml pour la configuration des clients courriels. Ce paquet n'installe aucune application"
   },
