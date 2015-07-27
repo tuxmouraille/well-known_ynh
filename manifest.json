@@ -22,6 +22,9 @@
       {
         "name": "path",
         "type": "path",
+        "ask": {
+          "fr": "Chemin par défaut pour la configuration."
+        },
         "default": "/.well-known"
       }
     ]
