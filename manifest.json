@@ -1,0 +1,24 @@
+{
+  "name": "BoxFAI",
+  "id": "well-known",
+  "description": {
+    "fr": "Installation du xml pour l'autoconfiguration' des clients courriels. Ce paquet n'installe aucune application'"
+  },
+  "developer": {
+    "name": "txmrl",
+    "email": "tuxmouraille@txmrl.net",
+    "url": "http://txmrl.net"
+  },
+  "multi_instance": "false",
+  "arguments": {
+    "install": [
+      {
+        "name": "domain",
+        "ask": {
+          "fr": "Choisir un domain pour la box."
+        },
+        "example": "domain.org"
+      },
+    ]
+  }
+}

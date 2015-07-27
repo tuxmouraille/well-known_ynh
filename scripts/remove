@@ -1,0 +1,16 @@
+#!/bin/bash
+
+domain=$(sudo yunohost app setting well-known domain)
+
+# Remove .well-known directory
+sudo rm -rf /var/www/.well-known
+
+# Remove skip config path /.well-known/autoconfig/mail/config-v1.1.xml
+sudo yunohost app setting -d well-known skipped_uris -v /.well-known/autoconfig/mail/config-v1.1.xml
+
+# Remove nginx conf
+sudo rm /etc/nginx/conf.d/$domain.d/well-known.conf
+
+# And reload
+sudo service nginx reload
+sudo yunohost app ssowatconf

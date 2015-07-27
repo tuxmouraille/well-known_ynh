@@ -1,0 +1,21 @@
+<clientConfig version="1.0">
+    <emailProvider id="DOMAINTOCHANGE">
+          <domain>DOMAINTOCHANGE</domain>
+          <displayName>Messagerie DOMAINTOCHANGE</displayName>
+          <displayShortName>DOMAINTOCHANGE</displayShortName>
+          <incomingServer type="imap">
+                <hostname>DOMAINTOCHANGE</hostname>
+                <port>993</port>
+                <socketType>SSL</socketType>
+                <username>%EMAILLOCALPART%</username>
+                <authentication>plain</authentication>
+          </incomingServer>
+          <outgoingServer type="smtp">
+                <hostname>DOMAINTOCHANGE</hostname>
+                <port>465</port>
+                <socketType>SSL</socketType>
+                <authentication>plain</authentication>
+                <username>%EMAILLOCALPART%</username>
+          </outgoingServer>
+    </emailProvider>
+</clientConfig>
