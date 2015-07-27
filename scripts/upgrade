@@ -2,6 +2,7 @@
 
 # Retrieve arguments
 domain=$(sudo yunohost app setting well-known domain)
+path=$(sudo yunohost app setting well-known path)
 
 # Add config xml
 sed -i "s@DOMAINTOCHANGE@$domain@g" ../conf/config-v1.1.xml
