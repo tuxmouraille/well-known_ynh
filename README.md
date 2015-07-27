@@ -1,7 +1,7 @@
 well-known
 ===========
 
-** en cour, non fonctionnel **
+** en cours, en phase de test **
 
 installation du script d'auto configuration pour les clients mails.
 
