@@ -10,7 +10,7 @@ sudo mkdir -p /var/www/.well-known/autoconfig/mail/
 sudo cp ../conf/config-v1.1.xml /var/www/.well-known/autoconfig/mail/config-v1.1.xml
 
 #skip config path /.well-known/autoconfig/mail/config-v1.1.xml
-sudo yunohost app setting well-known skipped_urls -v /.well-known/autoconfig/mail/config-v1.1.xml
+sudo yunohost app setting well-known skipped_uris -v /autoconfig/mail/config-v1.1.xml
 
 # Configure Nginx
 sudo cp ../conf/nginx.conf /etc/nginx/conf.d/$domain.d/well-known.conf
